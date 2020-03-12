@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+/*on définit le style du corps*/
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/*design de la barre de navigation*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 26px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: #1c75bc;
+}
+.vous {
+    float: right;
+}
+
+/*colonne principale*/
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#selfie{
+    border: 1px solid;
+    overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    width:90px;
+    height:90px;
+}
+
+/*design de la colonne infos*/
+.infos {
+    flex: 25%;
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+/*design de la colonne CV*/
+.cv {
+    flex: 50%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: left;
+}
+
+/*design de la colonne plus*/
+.plus {
+    flex: 25%;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/*lors d'un redimensionnement de la page sous 700 pixels, permet d'afficher les éléments suivant une colonne*/
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+.telecharger {
+    padding: 15px 15px 15px 15px;
+	font: bold 13px Arial;
+	background: #1c75bc;
+	color: #fff;
+	border-radius: 5px;
+	width: 100px;
+	border: none;
+}
+
+.mdp {
+    background-color: #a8a8a8;
+    border: none;
+    padding: 10px;
+}
+
+.modifier {
+    padding: 15px 15px 15px 15px;
+	font: bold 13px Arial;
+	background: #1c75bc;
+	color: #fff;
+	border-radius: 5px;
+	width: 100px;
+	border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #175182;
+}
+
+
+/*fond de page*/
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

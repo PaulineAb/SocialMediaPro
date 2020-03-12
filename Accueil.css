@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+/*on définit le style du corps*/
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/*en tête*/
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+/*design de la barre de navigation*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 26px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: #1c75bc;
+}
+
+.vous {
+    float: right;
+}
+
+/*colonne principale*/
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*design de la colonne du fil d'actualité*/
+.main {
+    flex: 50%;
+    background-color: white;
+    padding: 20px;
+}
+
+/*design de la colonne de partenariat*/
+.side {
+    flex: 50%;
+    background-color: white;
+    padding: 20px;
+}
+
+/*lors d'un redimensionnement de la page sous 700 pixels, permet d'afficher les éléments suivant une colonne*/
+@media screen and (max-width: 700px) {
+    .row, .navbar {   
+        flex-direction: column;
+    }
+}
+
+.envoyer {
+    padding: 15px 15px 15px 15px;
+	font: bold 13px Arial;
+	background: #1c75bc;
+	color: #fff;
+	border-radius: 5px;
+	width: 100px;
+	border: none;
+}
+
+.envoyer:hover {
+    background-color: #175182;
+}
+
+h1, h3 {
+
+    text-align:center;
+
+}
+
+h3 {
+    background-color:#333;
+    color: white;
+    font-size:0.9em;
+    margin-bottom:0px;
+}
+
+
+.publication p {
+    background-color:#ddd;
+    margin-top:0px;
+}
+
+.publication {
+    width:100%;
+    margin:auto;
+}
+
+/*fond de page*/
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+.sign {
+    padding: 15px 15px 15px 15px;
+	font: bold 13px Arial;
+	background: #1c75bc;
+	color: #fff;
+	border-radius: 5px;
+	width: 100px;
+	border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #175182;
+}
+
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

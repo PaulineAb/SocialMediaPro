@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica;
+    margin: 0;
+    background-color: #d9d9d9;
+}
+
+#logo {
+    width: 200px;
+    height: 100px;
+}
+
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 {
+    color: #1c75bc;
+}
+
+.etudiant {
+    flex: 50%;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    background-color: #d9d9d9;
+}
+
+.enseignant {
+    flex: 50%;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    background-color: #d9d9d9;
+}
+
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+.student {
+    padding: 15px 15px 15px 15px;
+	font: bold 13px Arial;
+	background: #1c75bc;
+	color: #fff;
+	border-radius: 5px;
+	width: 100px;
+	border: none;
+}
+
+.tutor {
+    padding: 15px 15px 15px 15px;
+	font: bold 13px Arial;
+	background: #1c75bc;
+	color: #fff;
+	border-radius: 5px;
+	width: 100px;
+	border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #135182;
+}
